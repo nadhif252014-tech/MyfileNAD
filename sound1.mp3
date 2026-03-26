@@ -1,0 +1,17 @@
+<h1>🔥 Soundboard Antek Asing 🔥</h1>
+
+<button onclick="playSound('sound1')">Antek Asing 1</button>
+<button onclick="playSound('sound2')">Antek Asing 2</button>
+<button onclick="playSound('sound3')">Antek Asing 3</button>
+
+<audio id="sound1" src="sound1.mp3"></audio>
+<audio id="sound2" src="sound2.mp3"></audio>
+<audio id="sound3" src="sound3.mp3"></audio>
+
+<script>
+function playSound(id){
+  var audio = document.getElementById(id);
+  audio.currentTime = 0;
+  audio.play();
+}
+</script>
